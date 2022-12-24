@@ -94,17 +94,10 @@ data.keys()
 
 1. Storing the job-description as a docx file
 
-Here is a sample job description used for parsing.
+We have to store the JD as a string and then convert it to a docx file
 
 
-
-Job Description
-
-
-Now we have to store this text as a Docx file:
-
-
-
+```
 #Importing the library to convert string to docx
 from docx import Document
 
@@ -120,7 +113,7 @@ p = document.add_paragraph(n)
 
 #Saving the document as Word File
 document.save('demo.docx')
-
+```
 Remember, the docx is saved in the same folder as the python file.
 
 
